@@ -24,7 +24,7 @@ def demo(event, context):
     # print(f"context: {context}")
 
     message_id = context.event_id
-    incoming_topic_id = context.resource.name
+    incoming_topic_id = context.resource["name"]
     publish_timestamp = context.timestamp
 
     message_data = "an empty message"

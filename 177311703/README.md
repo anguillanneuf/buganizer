@@ -32,11 +32,12 @@ This example deploys a function named `demo` in Pyhton, it gets invoked whenever
     gcloud pubsub topics publish $INCOMING_TOPIC_ID --message="3:35 PM"
     ```
 
-1. Head over to [Cloud Console]() to check out the logs of your function. You should see something similar to:
+1. Head over to [Cloud Console](http://console.cloud.google.com/functions/list) to check out the logs of your function. You should see something similar to:
 
     ```none
-    2021-05-20 14:56:29.440 PDT demo iofjzwgy90q0 Function triggered by 3:35 PM of messageId 2306343060931168 published to projects/tz-playground-bigdata/topics/april at 2021-05-20T21:56:28.301Z
-    2021-05-20 14:56:30.118 PDT demo iofjzwgy90q0 Published message ID 2419832115448835
-    2021-05-20 14:56:30.319 PDT demo iofjzwgy90q0 Published message ID 2419844337901231
+    2021-05-20 16:04:34.558 PDT demo djc01f1w7q5w Function triggered by 3:35 PM of messageId 2306546483605313 published to projects/tz-playground-bigdata/topics/your-incoming-topic-id at 2021-05-20T23:04:33.530Z
+    2021-05-20 16:04:35.502 PDT demo djc01f1w7q5w Published message ID 2420032922414595
+    2021-05-20 16:04:35.926 PDT demo djc01f1w7q5w Published message ID 2419982157525293
     ...
+    2021-05-20 16:04:37.296 PDT demo djc01f1w7q5w Function execution took 2753 ms, finished with status: 'ok'
     ```
